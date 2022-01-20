@@ -1,0 +1,219 @@
+﻿
+@{
+    ViewData["Title"] = "DashBoard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="row mb-2">
+                <div class="col-sm">
+                    <ol class="breadcrumb float-sm-left">
+                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div>
+        <!-- /.content-header -->
+        <div class=" container-fluid">
+            <div class="col-md-12">
+                <!-- Main content -->
+                <div class="content">
+                    <!-- Main row -->
+                    <div class="row">
+                        <!-- Left col -->
+                        <div class="col-md-7 connectedSortable">
+                            <!-- Custom tabs (Charts with tabs)-->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        Redemption
+                                    </h3>
+                                    <div class="card-tools">
+                                        <ul class="nav nav-pills ml-auto">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                                                    Day
+                                                </button>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="#" class="dropdown-item">1</a>
+                                                    <a href="#" class="dropdown-item">2</a>
+                                                    <a href="#" class="dropdown-item">3</a>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div><!-- /.card-header -->
+                                <div class="card-body">
+                                    <div class="tab-content p-0">
+                                        <!-- Morris chart - Sales -->
+                                        <div class="chart tab-pane active" id="revenue-chart"
+                                             style="position: relative; height: 300px;">
+                                            <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                        </div>
+                                        <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
+                                            <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                          <div id="sparkline-1"></div>
+                                        </div>
+                                        <!-- ./col -->
+                                        <div class="col-4 text-center">
+                                          <div id="sparkline-2"></div>
+                                        </div>
+                                        <!-- ./col -->
+                                        <div class="col-4 text-center">
+                                          <div id="sparkline-3"></div>
+                                        </div>
+                                        <!-- ./col -->
+                                      </div>
+                                </div><!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+
+                        <!-- /.Left col -->
+                        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                        <div class="col-md-5 connectedSortable">
+                            <!-- Map card -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        Redeem
+                                    </h3>
+                                    <div class="card-tools">
+                                        <ul class="nav nav-pills ml-auto">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                                                    Crircle K - Au Co
+                                                </button>
+                                                <div class="dropdown-menu" role="menu">
+                                                    <a href="#" class="dropdown-item">Crircle K - Au Co</a>
+                                                    <a href="#" class="dropdown-item">Crircle K - Au Co</a>
+                                                    <a href="#" class="dropdown-item">Crircle K - Au Co</a>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-center">
+                                        <strong>Goal Completion</strong>
+                                    </p>
+                                    <div class="info-box">
+                                        <span class="info-box-icon elevation-1"></span>
+                                        <div class="info-box-content">
+                                            <b>Pepsi Can</b>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                                            </div>
+                                            <span class="float-right">1000 sales</span>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="info-box">
+                                        <span class="info-box-icon elevation-1"></span>
+                                        <div class="info-box-content">
+                                            <b>Pepsi Can</b>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar bg-primary" style="width: 50%"></div>
+                                            </div>
+                                            <span class="float-right">1000 sales</span>
+                                        </div>
+                                    </div>
+                                    <!-- /.progress-group -->
+                                    <div class="info-box">
+                                        <span class="info-box-icon elevation-1"></span>
+                                        <div class="info-box-content">
+                                            <b>Pepsi Can</b>
+                                            <div class="progress progress-sm">
+                                                <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                            </div>
+                                            <span class="float-right">1000 sales</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.card-body-->
+                            <!-- /.card -->
+                            <!-- Calendar -->
+
+                        </div>
+                        <!-- TABLE: LATEST ORDERS -->
+                        <div class="col-md-12 card">
+                            <div class="card-header border-transparent">
+                                <h3 class="card-title">Recent redeem activities</h3>
+                                <section style="float: right;">
+                                    <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
+                                        <div class="dataTables_length" aria-controls="myTable">
+                                            <label>
+                                                Show
+                                            </label>
+                                            <select name="myTable_length" aria-controls="myTable">
+                                                <option value="100">100</option>
+                                                <option value="150">250</option>
+                                                <option value="250">250</option>
+                                                <option value="400">400</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Phone number</th>
+                                                    <th>Redeem for Product</th>
+                                                    <th>Amount</th>
+                                                    <th>Date</th>
+                                                    <th>Store</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>0986 765 4321</td>
+                                                    <td>Pepsi can</td>
+                                                    <td>01</td>
+                                                    <td>09:00:00 07/09/2020</td>
+                                                    <td>Circle K - Au Co 86/33 Au Co, Ward 9, Tan Bin District, HCMC</td>
+                                                    <td>Sent request</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0986 765 4321</td>
+                                                    <td>Pepsi can</td>
+                                                    <td>02</td>
+                                                    <td>09:00:00 07/09/2020</td>
+                                                    <td>Circle K - Au Co 86/33 Au Co, Ward 9, Tan Bin District, HCMC</td>
+                                                    <td>Sent request</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0986 765 4321</td>
+                                                    <td>Pepsi can</td>
+                                                    <td>03</td>
+                                                    <td>09:00:00 07/09/2020</td>
+                                                    <td>Circle K - Au Co 86/33 Au Co, Ward 9, Tan Bin District, HCMC</td>
+                                                    <td>Sent request</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table-responsive -->
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row (main row) -->
+        <!-- /.content-wrapper -->

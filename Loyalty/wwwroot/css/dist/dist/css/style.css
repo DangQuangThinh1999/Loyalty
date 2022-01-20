@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poiret+One&family=Quicksand:wght@300;400&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+li {
+    list-style: none;
+}
+.brand-text {
+    font-family: 'Ubuntu', sans-serif;
+}
+.main-sidebar {
+    background-color: #003768;
+}
+.main-sidebar p{
+    color: #fff;
+    left: 50px;
+}
+.main-sidebar i{
+    color: #fff;
+    padding-right: 5px;
+}
+.brand-text {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+.navbar-search {
+  padding-left: 500px;
+}
+.others {
+  padding-left: 300px;
+  flex: 1;
+  display: flex;
+}
+
+.others > li {
+  padding: 0 12px;
+  position: relative;
+}
+.others > li::after{
+  content:"";
+  display: block;
+  width: 1px;
+  height: 50%;
+  background-color: #dddddd;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  transform: translate(-50%);
+}
+.others > li:last-child::after{
+  display: none;
+}
+.others > li:first-child {
+  position: relative;
+}
+.others > li:first-child input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  outline: none;
+}
+.others > li:first-child i {
+  position: absolute;
+  right: 10px;
+}
+.wrapper .content-wrapper {
+  min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));
+}
+html {
+  height: 100%;
+}
+
+body {
+  background: #f2f2f2;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  min-height: 100%;
+  position: relative;
+}
+
+label {
+  margin-top: 6px;
+  line-height: 17px;
+}
+
+a {
+  color: #fff;
+}
+
+a:focus,
+a:hover {
+  color: #008080;
+}
+
+.checkbox-inline+.checkbox-inline,
+.radio-inline+.radio-inline {
+  margin-top: 6px;
+}
+
+/******* Login Page *******/
+
+body.login {
+  background: radial-gradient(ellipse at center, rgb(218, 238, 245) 0%, #EFF2F9 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f1f2b5', endColorstr='#135058', GradientType=1);
+}
+
+.relative {
+  position: relative;
+}
+.login-container-wrapper .welcome {
+  margin: 0 0 80px 0;
+  font-size: 40px;
+  color: #003768;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.login-container-wrapper {
+  max-width: 400px;
+  margin: 10% auto 8%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  position: relative;
+  padding-top: 80px;
+}
+
+.logo .fa {
+  font-size: 50px;
+}
+.login input:focus + .fa{
+  color:#fff;
+}
+.login-form .form-group {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.login-form i {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #fff;
+}
+
+.login-form .input-lg {
+  font-size: 16px;
+  height: 52px;
+  padding: 10px 25px;
+  border-radius: 0;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input:focus {
+  background-color: #fff;
+  color: #eee;
+  border-left: 4px solid rgb(201, 199, 199);
+}
+
+.login input:focus {
+  border-left: 4px solid #003768;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: rgba(40, 52, 67, 0.75)!important;
+  background-image: none;
+  color: rgb(0, 0, 0);
+  border-color: #FAFFBD;
+}
+
+.login .checkbox label,
+.login .checkbox a {
+  color: #003768;
+}
+.btn {
+    background-color:#003768;
+    padding: 8px 50px;
+}
+
