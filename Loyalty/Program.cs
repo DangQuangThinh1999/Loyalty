@@ -1,4 +1,4 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=DashBoard}/{id?}");
+    pattern: "{controller=Home}/{action=DashBoard}/{id?}"); // CẤU HÌNH CHẠY TỪ HOMECONTROLL TRƯỚC
 
 app.Run();

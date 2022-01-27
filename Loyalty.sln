@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loyalty", "Loyalty\Loyalty.csproj", "{FB08C5DE-8628-4430-95F3-CA8D9998B0CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loyalty", "Loyalty\Loyalty.csproj", "{FB08C5DE-8628-4430-95F3-CA8D9998B0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loyalty.Data", "Loyalty.Data\Loyalty.Data.csproj", "{ED61FEF6-80A6-4440-A0A8-9587ED796EDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FB08C5DE-8628-4430-95F3-CA8D9998B0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB08C5DE-8628-4430-95F3-CA8D9998B0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB08C5DE-8628-4430-95F3-CA8D9998B0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED61FEF6-80A6-4440-A0A8-9587ED796EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED61FEF6-80A6-4440-A0A8-9587ED796EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED61FEF6-80A6-4440-A0A8-9587ED796EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED61FEF6-80A6-4440-A0A8-9587ED796EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
